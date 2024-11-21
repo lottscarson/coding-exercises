@@ -87,6 +87,11 @@ This project requires a Google Maps API key.
 2. Add this line, where YOUR_API_KEY is your API key:
     `MAPS_API_KEY=YOUR_API_KEY`
 
+To run the app, simply open up the `android` folder in Android Studio, run a Gradle Sync, and then run the app.
+
 ## Implementation
 
-Fill out with necessary information and remove this line.
+This project uses Retrofit for the following reasons:
+1. It's ease of use. It's simple and fast to set up basic API calls.
+2. It's ubiquity. Retrofit is pretty much the gold standard when it comes to Android networking libraries, and it's used almost universally.
+3. Built-In type safety. 
