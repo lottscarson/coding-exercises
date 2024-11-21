@@ -50,8 +50,17 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
     // Android Maps Compose composables for the Maps SDK for Android
     implementation(libs.maps.compose)
+
+    // Retrofit libraries
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
+    // Kotlin Coroutines
+    implementation(libs.kotlinx.coroutines.android)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
