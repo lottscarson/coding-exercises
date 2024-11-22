@@ -137,9 +137,7 @@ fun MapScreen(paddingValues: PaddingValues, viewModel: LocationViewModel) {
     }
 }
 
-/**
- * Replacement for Kotlin's deprecated `capitalize()` function.
- */
+// Replacement for Kotlin's deprecated `capitalize()` function
 fun String.capitalized(): String {
     return this.lowercase().replaceFirstChar {
         it.titlecase(Locale.getDefault())
