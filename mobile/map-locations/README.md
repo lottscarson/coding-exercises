@@ -99,3 +99,4 @@ Everything is pretty standard modern Android. A ViewModel, Jetpack-Compose for U
 **Things I would do differently in a production grade app:**
 - If this app were to get any larger, I would definitely use Dagger/Hilt for dependency injection, but it really seemed like overkill for such a simple app.
 - I debated on whether to add loading states, but given that the data set was such a small size, it seemed that it would barely make a difference.
+- If this app was fetching data from an actual API that provided similar locations for areas other than San Francisco, I would expect it to provide an endpoint that accepted latitude, longitude, and radius parameters. In that case, I would need to adjust the LocationViewModel to refetch data every time the map's position was moved. 
