@@ -91,7 +91,9 @@ To run the app, simply open up the `android` folder in Android Studio, run a Gra
 
 ## Implementation
 
-This project uses Retrofit for the following reasons:
+Everything is pretty standard modern Android. A ViewModel, Jetpack-Compose for UI, and Retrofit with Coroutines. I'm using Retrofit for the following reasons:
 1. It's ease of use. It's simple and fast to set up basic API calls.
 2. It's ubiquity. Retrofit is pretty much the gold standard when it comes to Android networking libraries, and it's used almost universally.
 3. Built-In type safety. 
+
+

@@ -24,15 +24,11 @@ class LocationViewModel(private val locationRepository: LocationRepository) : Vi
             try {
                 val fetchedLocations = locationRepository.getLocations()
                 _locations = fetchedLocations
-                _sortedLocations.value = fetchedLocations
+                filterByLocationType(LocationType.RESTAURANT)
             } catch (e: Exception) {
                 println("Error fetching locations: ${e.message}")
             }
         }
-    }
-
-    fun allSelected() {
-        _sortedLocations.value = _locations
     }
 
     fun filterByLocationType(locationType: LocationType) {
