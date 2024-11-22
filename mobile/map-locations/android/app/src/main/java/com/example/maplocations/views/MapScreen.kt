@@ -36,8 +36,8 @@ import com.google.maps.android.compose.MarkerState
 import com.google.maps.android.compose.rememberCameraPositionState
 import java.util.Locale
 
-const val SAN_FRAN_LAT = 37.7749
-const val SAN_FRAN_LONG = -122.4194
+private const val SAN_FRAN_LAT = 37.7749
+private const val SAN_FRAN_LONG = -122.4194
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
