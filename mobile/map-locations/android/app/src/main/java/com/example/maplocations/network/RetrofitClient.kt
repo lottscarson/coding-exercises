@@ -5,7 +5,7 @@ import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-const val BASE_URL = "https://raw.githubusercontent.com/lottscarson/coding-exercises/master/mobile/map-locations/"
+private const val BASE_URL = "https://raw.githubusercontent.com/lottscarson/coding-exercises/master/mobile/map-locations/"
 
 object RetrofitClient {
     // Register the custom deserializer with Gson
