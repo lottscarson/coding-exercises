@@ -91,9 +91,11 @@ To run the app, simply open up the `android` folder in Android Studio, run a Gra
 
 ## Implementation
 
-Everything is pretty standard modern Android. A ViewModel, Jetpack-Compose for UI, and Retrofit with Coroutines. I'm using Retrofit for the following reasons:
+Everything is pretty standard modern Android. A ViewModel, Jetpack-Compose for UI, and Retrofit with Coroutines for the network layer. I'm using Retrofit for the following reasons:
 1. It's ease of use. It's simple and fast to set up basic API calls.
 2. It's ubiquity. Retrofit is pretty much the gold standard when it comes to Android networking libraries, and it's used almost universally.
-3. Built-In type safety. 
+3. Built-In type safety.
 
-
+**Things I would do differently in a production grade app:**
+- If this app were to get any larger, I would definitely use Dagger/Hilt for dependency injection, but it really seemed like overkill for such a simple app.
+- I debated on whether to add loading states, but given that the data set was such a small size, it seemed that it would barely make a difference.
